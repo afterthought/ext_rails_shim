@@ -48,7 +48,7 @@ module ExtRailsShim
           theme = theme.value
           without_url = (without_url.class == FalseClass) ? without_url : without_url.value
           
-          asset_path = '/assets'
+          asset_path = '/assets/ext4'
           image_path = File.join(asset_path, theme, path)
           
           url = without_url ? image_path : "url('#{image_path}')"
@@ -56,7 +56,7 @@ module ExtRailsShim
         end
 
         def theme_image_exists(path)
-          where_to_look = path.value.gsub('/assets', 'vendor/assets/images/ext4')
+          where_to_look = path.value.gsub('/assets/ext4', 'vendor/assets/images/ext4')
           result = where_to_look && FileTest.exists?("#{where_to_look}")
           return Sass::Script::Bool.new(result)
         end
