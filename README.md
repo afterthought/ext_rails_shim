@@ -21,6 +21,14 @@ Some planned features are missing (See below).
    `<%= javascript_include_tag 'ext4/ext-all' %>`
    in your views.
 
+### Handling Data from/to Rails
+
+1. Define a model as a subclass of Ext.data.Model as usual.
+2. Define a store as a subclass of Rails.data.Store, which communicates well with Rails controllers.
+
+See the example application for detail.
+
 ## Coming Soon
 
 * Ext.data friendly Rails controller.
+* Removal of protected attributes on POST/PUT. (by sending `AR.protected_attributes.to_a`)
