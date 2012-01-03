@@ -13,7 +13,6 @@ Some planned features are missing (See below).
    This installs Ext.js's javascripts into vendor/assets/javascripts/ext4,
    theme images into vendor/assets/images/ext4 and
    theme stylesheets into vendor/assets/stylesheets/ext4 respectively.
-   
    Stylesheets are recompiled so that image paths fit Rails asset path convention (/assets/).
 5. Now you can use codes like
    `<%= stylesheet_include_tag 'ext4/ext-all' %>`
