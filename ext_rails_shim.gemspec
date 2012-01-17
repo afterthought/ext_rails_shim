@@ -9,11 +9,9 @@ require 'ext_rails_shim/version'
 Gem::Specification.new do |s|
   s.name        = 'ext_rails_shim'
   s.version     = ExtRailsShim::VERSION
-  s.authors     = ['TODO: Your name']
-  s.email       = ['TODO: Your email']
-  s.homepage    = 'TODO'
-  s.summary     = 'TODO: Summary of ExtRailsShim.'
-  s.description = 'TODO: Description of ExtRailsShim.'
+  s.authors     = ['Ozawa Sakuro']
+  s.homepage    = 'https://github.com/sakuro/ext_rails_shim'
+  s.summary     = 'Minimal intermediation between Rails 3.1 and ExtJS 4'
 
   s.files = Dir['{app,config,lib}/**/*'] + ['GPLv3', 'Rakefile', 'README.md']
 
