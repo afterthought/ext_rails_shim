@@ -11,9 +11,9 @@ Gem::Specification.new do |s|
   s.version     = ExtRailsShim::VERSION
   s.authors     = ['Ozawa Sakuro']
   s.homepage    = 'https://github.com/sakuro/ext_rails_shim'
-  s.summary     = 'Minimal intermediation between Rails 3.1 and ExtJS 4'
+  s.summary     = 'Minimal intermediation between Rails 3.1+ and ExtJS 4'
 
   s.files = Dir['{app,config,lib}/**/*'] + ['GPLv3', 'Rakefile', 'README.md']
 
-  s.add_dependency 'rails', '~> 3.1.0'
+  s.add_dependency 'rails', '~> 3.1'
 end
