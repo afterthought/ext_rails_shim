@@ -26,6 +26,10 @@ module ExtRailsShim
         result.merge!(success: false, errors: resource.errors.full_messages) if has_errors?
         result.merge!(root => [resource])
       end
+
+      # check for ExtJS's custom :metaData option passed to Rails' respond_with() method
+      result.merge!(metaData: options.delete(:metaData)) if !(options[:metaData].nil? || options[:metaData].empty?)
+
       result
     end
 
